@@ -60,7 +60,7 @@
     color: var(--light-grey);
 }
 
-button{
+.button-sub{
     width: 160px;
     height: 46px;
     background-color: var(--purple);
@@ -71,4 +71,37 @@ button{
     border-radius: 10px;
     margin-left: 290px;
     margin-top: 31px;
+}
+
+.button-sub:hover{
+     cursor: pointer;
+     background-color: white;
+     color: var(--purple);
+     border: 1px solid var(--purple);
+}
+
+dialog{
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+}
+dialog h2{
+    color: var(--purple);
+}
+dialog form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+dialog form input{
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    padding: 10px
 }

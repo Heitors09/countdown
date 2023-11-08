@@ -1,6 +1,14 @@
 const timer = document.getElementById('timer');
 const release = '10 Nov 2023';
 
+const button = document.getElementById('first-button')
+const modal = document.querySelector('dialog')
+
+button.addEventListener('click', () =>{
+    modal.showModal()
+})
+
+
 function contador(){
     const date = new Date(release);
     const current = new Date();
@@ -12,7 +20,7 @@ function contador(){
     const mins = Math.floor(Totalseconds/60) % 60;
     const seconds = Math.floor(Totalseconds) % 60;
     
-    timer.innerHTML = formatTime(days) + formatTime(hours) + formatTime(mins) + ':' + seconds
+    timer.innerHTML = formatTime(days) + formatTime(hours) + formatTime(mins)+ ':'+ seconds
    
    //função para formatar o time colocando o zero antes
    function formatTime(time){
@@ -21,6 +29,14 @@ function contador(){
    
 }
 
+
+
+
+
+
+
 contador();
 
 setInterval(contador,1000);
+
+
